@@ -7,8 +7,8 @@
  * and a message is printed to the Serial Monitor.
  * When no object is detected, the LED turns OFF.
  *
- * @author Bhartendu Ji
- * @date 18 Feb 2026
+ * @author Jagriti Gupta
+ * @date 19 Feb 2026
  */
 // Pin Definitions
 int irPin = 7;     ///< IR sensor OUT pin connected to digital pin 7
@@ -28,3 +28,14 @@ void setup() {
   pinMode(irPin, INPUT);
   pinMode(ledPin, OUTPUT);
 }
+/**
+ * @brief Continuously checks for object detection.
+ *
+ * If IR sensor detects an object (LOW signal):
+ *  - LED turns ON
+ *  - Prints "Object Detected"
+ *
+ * If no object is detected:
+ *  - LED turns OFF
+ *  - Prints "No Object"
+ */
